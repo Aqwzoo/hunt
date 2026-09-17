@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 - Not Found</title>
 
+    <style>
+        body {
+            background-color: #080808;
+            color: #aaaaaa;
+            font-family: monospace;
+            padding: 80px;
+        }
+
+        h1 {
+            font-size: 70px;
+            color: #dddddd;
+        }
+
+        .error {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        button {
+            background: none;
+            border: none;
+            color: #555555;
+            font-family: monospace;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        button:hover {
+            color: #aaaaaa;
+        }
+
+        #secret {
+            display: none;
+            margin-top: 30px;
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>404</h1>
+
+    <div class="error">
+        RESOURCE NOT FOUND.
+        <br><br>
+
+        The requested resource could not be located.
+        <br><br>
+
+        ERROR CODE: 3301-07
+        <br><br>
+
+        <button onclick="reveal()">[ retry ]</button>
+
+        <div id="secret">
+            REQUEST REJECTED.
+            <br><br>
+
+            You were not supposed to find this.
+            <br><br>
+
+            16 5 18 19 9 19 20
+            <br><br>
+
+            — INDIVIDUAL
+        </div>
+    </div>
+
+    <script>
+        function reveal() {
+            document.getElementById("secret").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
